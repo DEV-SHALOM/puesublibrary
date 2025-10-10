@@ -1,47 +1,58 @@
+const STATIC_USERNAME = import.meta.env.VITE_USERNAME;
+const STATIC_PASSWORD = import.meta.env.VITE_PASSWORD;
 
-document.addEventListener('DOMContentLoaded', function() {
-    const loginPage = document.getElementById('login-page');
-    const mainPage = document.getElementById('main-page');
-    const usernameInput = document.getElementById('username');
-    const passwordInput = document.getElementById('password');
-    const loginBtn = document.getElementById('login-btn');
-    const logoutBtn = document.getElementById('logout-btn');
-    const errorMessage = document.getElementById('error-message');
+document.addEventListener("DOMContentLoaded", function () {
+  const loginPage = document.getElementById("login-page");
+  const mainPage = document.getElementById("main-page");
+  const loginForm = document.getElementById("login-form");
+  const usernameInput = document.getElementById("username");
+  const passwordInput = document.getElementById("password");
+  const errorMessage = document.getElementById("error-message");
+  const logoutBtn = document.getElementById("logout-btn");
 
-    // Default credentials (you can change these)
-    const validUsername = "admin";
-    const validPassword = "12345t";
+  // Check if user is already logged in (from sessionStorage)
+  if (sessionStorage.getItem("isLoggedIn") === "true") {
+    showMainPage();
+  }
 
-    // Login functionality
-    loginBtn.addEventListener('click', function() {
-        const username = usernameInput.value;
-        const password = passwordInput.value;
+  // Login form submission
+  loginForm.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-        if (username === validUsername && password === validPassword) {
-            // Successful login
-            loginPage.classList.add('hidden');
-            mainPage.classList.remove('hidden');
-            errorMessage.classList.add('hidden');
-            
-            // Clear input fields
-            usernameInput.value = '';
-            passwordInput.value = '';
-        } else {
-            // Failed login
-            errorMessage.classList.remove('hidden');
-        }
-    });
+    const username = usernameInput.value.trim();
+    const password = passwordInput.value.trim();
 
-    // Logout functionality
-    logoutBtn.addEventListener('click', function() {
-        mainPage.classList.add('hidden');
-        loginPage.classList.remove('hidden');
-    });
+    if (username === STATIC_USERNAME && password === STATIC_PASSWORD) {
+      // Successful login
+      sessionStorage.setItem("isLoggedIn", "true");
+      showMainPage();
+      errorMessage.classList.add("hidden");
+    } else {
+      // Failed login
+      errorMessage.classList.remove("hidden");
+      usernameInput.value = "";
+      passwordInput.value = "";
+      usernameInput.focus();
+    }
+  });
 
-    // Allow login with Enter key
-    passwordInput.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter') {
-            loginBtn.click();
-        }
-    });
+  // Logout functionality
+  logoutBtn.addEventListener("click", function () {
+    sessionStorage.removeItem("isLoggedIn");
+    showLoginPage();
+  });
+
+  function showMainPage() {
+    loginPage.classList.add("hidden");
+    mainPage.classList.remove("hidden");
+  }
+
+  function showLoginPage() {
+    mainPage.classList.add("hidden");
+    loginPage.classList.remove("hidden");
+    usernameInput.value = "";
+    passwordInput.value = "";
+    errorMessage.classList.add("hidden");
+    usernameInput.focus();
+  }
 });

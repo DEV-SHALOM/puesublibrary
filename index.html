@@ -16,10 +16,12 @@
       content="A Directory of Peaceland University Electronic Databases and Library Resources"
     />
     
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/script.js"></script>
     
-    <!-- <script type="module" crossorigin src="/assets/index-Bfv2ZYes.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer="" src="/index.js"></script>
+    <script defer="" type="module" src="/script.js"></script>
+    
+    
   </head>
 
 
@@ -29,15 +31,61 @@
     cz-shortcut-listen="true"
   >
 
-  <!-- Login Page
-<div id="login-page">
-  <input id="username" type="text" placeholder="Username">
-  <input id="password" type="password" placeholder="Password">
-  <button id="login-btn">Login</button>
-  <p id="error-message" class="hidden text-red-500">Invalid username or password</p>
-</div> -->
+<!-- Login Page -->
+  <div id="login-page" class="min-h-screen bg-[url(/img/PeacelandBackgroundImage.jpg)] bg-no-repeat bg-cover bg-center flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md">
+      <div class="text-center mb-8">
+        <img
+          alt="Peaceland University"
+          class="mx-auto size-20 rounded-full mb-4"
+          src="/img/Peaceland Logo.jpg"
+        />
+        <h1 class="text-2xl font-bold text-[#0c0e41]">PEACELAND UNIVERSITY ENUGU</h1>
+        <p class="text-gray-600 mt-2">Library Databases & Electronic Resources</p>
+      </div>
+      
+      <form id="login-form">
+        <div class="mb-4">
+          <label for="username" class="block text-sm font-medium text-gray-700 mb-1">Username</label>
+          <input 
+            id="username" 
+            type="text" 
+            placeholder="Enter institution username" 
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0c0e41] focus:border-transparent outline-none transition duration-200"
+            required
+          >
+        </div>
+        
+        <div class="mb-6">
+          <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+          <input 
+            id="password" 
+            type="password" 
+            placeholder="Enter institution password" 
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0c0e41] focus:border-transparent outline-none transition duration-200"
+            required
+          >
+        </div>
+        
+        <button 
+          type="submit"
+          class="w-full bg-[#0c0e41] text-white py-3 px-4 rounded-lg font-semibold hover:bg-[#1a1f6b] transition duration-300 focus:ring-2 focus:ring-[#0c0e41] focus:ring-offset-2"
+        >
+          Login to Access Resources
+        </button>
+        
+        <p id="error-message" class="hidden text-red-500 text-center mt-4 text-sm">
+          Invalid username or password. Please contact the library administrator.
+        </p>
+      </form>
+      
+      <div class="mt-6 text-center text-sm text-gray-500">
+        <p>For login assistance, please contact the University Library</p>
+      </div>
+    </div>
+  </div>
 
-    <div id="main-page">
+    <div id="main-page" class="hidden">
       <div>
         <div
           class="bg-[url(/img/PeacelandBackgroundImage.jpg)] bg-black/75 bg-blend-overlay bg-cover bg-center py-10 px-3 md:px-6"
