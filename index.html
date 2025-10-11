@@ -10,16 +10,18 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peaceland University Enugu</title>
+    <title>Federal University of Agriculture, Zuru, Kebbi</title>
     <meta
       name="description"
-      content="A Directory of Peaceland University Electronic Databases and Library Resources"
+      content="A Directory of Federal University of Agriculture Electronic Databases and Library Resources"
     />
     
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/script.js"></script>
     
-    <!-- <script type="module" crossorigin src="/assets/index-Bfv2ZYes.js"></script> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer="" src="/index.js"></script>
+    <script defer="" type="module" src="/script.js"></script>
+    
+    
   </head>
 
 
@@ -29,36 +31,82 @@
     cz-shortcut-listen="true"
   >
 
-  <!-- Login Page
-<div id="login-page">
-  <input id="username" type="text" placeholder="Username">
-  <input id="password" type="password" placeholder="Password">
-  <button id="login-btn">Login</button>
-  <p id="error-message" class="hidden text-red-500">Invalid username or password</p>
-</div> -->
+<!-- Login Page -->
+  <div id="login-page" class="min-h-screen bg-[url(/img/FederalUniversityofAgricultureZuruBackgroundImage.jpg)] bg-no-repeat bg-cover bg-center flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md">
+      <div class="text-center mb-8">
+        <img
+          alt="Federal University of Agriculture"
+          class="mx-auto size-20 rounded-full mb-4"
+          src="/img/Federal University of Agriculture Zuru Logo.jpg"
+        />
+        <h1 class="text-2xl font-bold text-[#0c0e41]">FEDERAL UNIVERSITY OF AGRICULTURE, ZURU, KEBBI</h1>
+        <p class="text-gray-600 mt-2">Library Databases & Electronic Resources</p>
+      </div>
+      
+      <form id="login-form">
+        <div class="mb-4">
+          <label for="username" class="block text-sm font-medium text-gray-700 mb-1">Username</label>
+          <input 
+            id="username" 
+            type="text" 
+            placeholder="Enter institution username" 
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0c0e41] focus:border-transparent outline-none transition duration-200"
+            required
+          >
+        </div>
+        
+        <div class="mb-6">
+          <label for="password" class="block text-sm font-medium text-gray-700 mb-1">Password</label>
+          <input 
+            id="password" 
+            type="password" 
+            placeholder="Enter institution password" 
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#0c0e41] focus:border-transparent outline-none transition duration-200"
+            required
+          >
+        </div>
+        
+        <button 
+          type="submit"
+          class="w-full bg-[#0c0e41] text-white py-3 px-4 rounded-lg font-semibold hover:bg-[#1a1f6b] transition duration-300 focus:ring-2 focus:ring-[#0c0e41] focus:ring-offset-2"
+        >
+          Login to Access Resources
+        </button>
+        
+        <p id="error-message" class="hidden text-red-500 text-center mt-4 text-sm">
+          Invalid username or password. Please contact the library administrator.
+        </p>
+      </form>
+      
+      <div class="mt-6 text-center text-sm text-gray-500">
+        <p>For login assistance, please contact the University Library</p>
+      </div>
+    </div>
+  </div>
 
-    <div id="main-page">
+    <div id="main-page" class="hidden">
       <div>
         <div
-          class="bg-[url(/img/PeacelandBackgroundImage.jpg)] bg-black/75 bg-blend-overlay bg-cover bg-center py-10 px-3 md:px-6"
+          class="bg-[url(/img/FederalUniversityofAgricultureZuruBackgroundImage.jpg)] bg-black/75 bg-blend-overlay bg-cover bg-center py-10 px-3 md:px-6"
         >
           <button id="logout-btn" class="w-fit bg-white block text-black ml-auto py-1 px-4 cursor-pointer rounded-md hover:bg-gray-100 transition"
           >
             Logout</button
           ><img
-            alt="MLU"
+            alt="FAUZ"
             class="mx-auto size-20 sm:size-30 md:size-40 rounded-full mt-10"
-            src="/img/Peaceland Logo.jpg"
+            src="/img/Federal University of Agriculture Zuru Logo.jpg"
           />
           <h1
             class="text-lg sm:text-2xl md:text-4xl font-semibold text-center mt-4 py-4 px-2 text-white"
           >
-            PEACELAND UNIVERSITY ENUGU
+            FEDERAL UNIVERSITY OF AGRICULTURE, ZURU, KEBBI
           </h1>
           <h2
             class="text-lg md:text-2xl font-medium bg-[#0c0e41] text-white text-center mt-2 py-4 px-4 rounded-md max-w-7xl mx-auto"
           >
-            PEACELAND UNIVERSITY LIBRARY DATABASES AND ELECTRONIC RESOURCES.
+            FEDERAL UNIVERSITY OF AGRICULTURE LIBRARY DATABASES AND ELECTRONIC RESOURCES.
           </h2>
         </div>
         <div class="max-w-7xl mx-auto p-4 md:p-6 mt-4">
@@ -494,7 +542,7 @@
                 <img
                   alt="COURSERA"
                   class="h-15 md:h-20 object-cover object-center"
-                  src="/assets/coursera-CumjuVoF.jpg"
+                  src="https://mue.cblibrary.ng/assets/coursera-CumjuVoF.jpg"
                 />
                 <p class="mt-4 text-black md:text-lg">
                   <span class="font-bold">COURSERA</span> Coursera partners with
@@ -981,265 +1029,7 @@
             </div>
           </div>
         </div>
-        <main class="animate-fade-in py-8">
-  <div class="w-[90%] max-w-7xl mx-auto">
-    <h1 class="text-[#466d9b] text-2xl my-6 text-center relative pb-3 font-bold tracking-tight">
-      e-Journals Collection
-      <span class="absolute bottom-1 left-1/2 -translate-x-1/2 w-48 max-w-[40vw] h-1 bg-gradient-to-r from-[#466d9b] to-transparent rounded"></span>
-    </h1>
-    <p class="text-center text-gray-500 text-base mb-5 mx-auto max-w-[62ch]">
-      Discover open and subscribed scholarly journals across disciplines. Filter by category or search titles.
-    </p>
-
-    <div class="flex gap-4 flex-wrap items-center justify-between my-4">
-      <div class="relative flex-1 min-w-[260px]">
-        <span class="absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none">
-          <i class="fas fa-search text-gray-400"></i>
-        </span>
-        <input 
-          id="searchInput" 
-          type="search" 
-          placeholder="Search journal titles & platforms…" 
-          aria-label="Search e-journals"
-          class="w-full py-3 px-10 border border-gray-200 rounded-xl bg-white outline-none text-gray-800 transition-all duration-200 focus:border-blue-300 focus:ring-4 focus:ring-blue-100"
-        />
-        <button class="absolute right-2 top-1/2 -translate-y-1/2 border-none bg-transparent text-base cursor-pointer text-gray-400" id="clearSearch" aria-label="Clear search">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="flex gap-2 flex-wrap" id="chips">
-        <button class="px-3 py-2 border border-gray-200 rounded-full bg-white text-gray-900 text-sm cursor-pointer select-none transition-all duration-200 hover:-translate-y-0.5 border-blue-300 bg-blue-50 active" data-cat="all">All</button>
-        <button class="px-3 py-2 border border-gray-200 rounded-full bg-white text-gray-900 text-sm cursor-pointer select-none transition-all duration-200 hover:-translate-y-0.5" data-cat="Administrative Studies">Administrative</button>
-        <button class="px-3 py-2 border border-gray-200 rounded-full bg-white text-gray-900 text-sm cursor-pointer select-none transition-all duration-200 hover:-translate-y-0.5" data-cat="Communication Technology">Communication Tech</button>
-        <button class="px-3 py-2 border border-gray-200 rounded-full bg-white text-gray-900 text-sm cursor-pointer select-none transition-all duration-200 hover:-translate-y-0.5" data-cat="Business Management">Business Mgmt</button>
-        <button class="px-3 py-2 border border-gray-200 rounded-full bg-white text-gray-900 text-sm cursor-pointer select-none transition-all duration-200 hover:-translate-y-0.5" data-cat="Engineering">Engineering</button>
-        <button class="px-3 py-2 border border-gray-200 rounded-full bg-white text-gray-900 text-sm cursor-pointer select-none transition-all duration-200 hover:-translate-y-0.5" data-cat="Computer Science">Computer Science</button>
-        <button class="px-3 py-2 border border-gray-200 rounded-full bg-white text-gray-900 text-sm cursor-pointer select-none transition-all duration-200 hover:-translate-y-0.5" data-cat="Mathematics">Mathematics</button>
-        <button class="px-3 py-2 border border-gray-200 rounded-full bg-white text-gray-900 text-sm cursor-pointer select-none transition-all duration-200 hover:-translate-y-0.5" data-cat="Extensive E-Journal Links">Extensive Links</button>
-      </div>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-2" id="grid">
-      <!-- Administrative Studies -->
-      <details class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-200 hover:-translate-y-0.5 open:shadow-lg" open data-cat="Administrative Studies">
-        <summary class="list-none flex items-center justify-between gap-4 bg-slate-100 p-4 cursor-pointer">
-          <span class="font-bold text-blue-800 flex items-center gap-2">
-            Administrative Studies <span class="text-xs text-slate-900 bg-slate-200 border border-slate-300 rounded-full px-2 py-1" data-count>0</span>
-          </span>
-          <span class="transition-transform duration-200 open:rotate-180">
-            <i class="fas fa-chevron-down"></i>
-          </span>
-        </summary>
-        <ul class="p-4">
-          <li>
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.tandfonline.com/toc/rabr20/current" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> Accounting and Business Research <span class="ml-auto text-sm opacity-60">tandfonline.com</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.ajol.info/browseBy/category?categoryId=14" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> AJOL Accounting Journals <span class="ml-auto text-sm opacity-60">ajol.info</span>
-            </a>
-          </li>
-        </ul>
-      </details>
-
-      <!-- Communication Technology -->
-      <details class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-200 hover:-translate-y-0.5 open:shadow-lg" open data-cat="Communication Technology">
-        <summary class="list-none flex items-center justify-between gap-4 bg-slate-100 p-4 cursor-pointer">
-          <span class="font-bold text-blue-800 flex items-center gap-2">
-            Communication Technology <span class="text-xs text-slate-900 bg-slate-200 border border-slate-300 rounded-full px-2 py-1" data-count>0</span>
-          </span>
-          <span class="transition-transform duration-200 open:rotate-180">
-            <i class="fas fa-chevron-down"></i>
-          </span>
-        </summary>
-        <ul class="p-4">
-          <li>
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.ajol.info/browseBy/category?categoryId=20" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> Library & Information Science (AJOL) <span class="ml-auto text-sm opacity-60">ajol.info</span>
-            </a>
-          </li>
-        </ul>
-      </details>
-
-      <!-- Business Management -->
-      <details class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-200 hover:-translate-y-0.5 open:shadow-lg" open data-cat="Business Management">
-        <summary class="list-none flex items-center justify-between gap-4 bg-slate-100 p-4 cursor-pointer">
-          <span class="font-bold text-blue-800 flex items-center gap-2">
-            Business Management <span class="text-xs text-slate-900 bg-slate-200 border border-slate-300 rounded-full px-2 py-1" data-count>0</span>
-          </span>
-          <span class="transition-transform duration-200 open:rotate-180">
-            <i class="fas fa-chevron-down"></i>
-          </span>
-        </summary>
-        <ul class="p-4">
-          <li>
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.tandfonline.com/action/doSearch?AllField=business+management" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> Taylor & Francis – Business Management <span class="ml-auto text-sm opacity-60">tandfonline.com</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.sciencedirect.com/browse/journals-and-books?contentType=JL&accessType=openAccess&subject=business-management-and-accounting" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> ScienceDirect – Business & Accounting (OA) <span class="ml-auto text-sm opacity-60">sciencedirect.com</span>
-            </a>
-          </li>
-        </ul>
-      </details>
-
-      <!-- Engineering -->
-      <details class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-200 hover:-translate-y-0.5 open:shadow-lg" open data-cat="Engineering">
-        <summary class="list-none flex items-center justify-between gap-4 bg-slate-100 p-4 cursor-pointer">
-          <span class="font-bold text-blue-800 flex items-center gap-2">
-            Engineering <span class="text-xs text-slate-900 bg-slate-200 border border-slate-300 rounded-full px-2 py-1" data-count>0</span>
-          </span>
-          <span class="transition-transform duration-200 open:rotate-180">
-            <i class="fas fa-chevron-down"></i>
-          </span>
-        </summary>
-        <ul class="p-4">
-          <li>
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.sciencedirect.com/browse/journals-and-books?contentType=JL&accessType=openAccess&subject=electrical-and-electronic-engineering" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> Electrical & Electronic Engineering (OA) <span class="ml-auto text-sm opacity-60">sciencedirect.com</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.sciencedirect.com/browse/journals-and-books?contentType=JL&accessType=openAccess&subject=mechanical-engineering" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> Mechanical Engineering (OA) <span class="ml-auto text-sm opacity-60">sciencedirect.com</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.sciencedirect.com/browse/journals-and-books?contentType=JL&accessType=openAccess&subject=civil-and-structural-engineering" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> Civil & Structural Engineering (OA) <span class="ml-auto text-sm opacity-60">sciencedirect.com</span>
-            </a>
-          </li>
-        </ul>
-      </details>
-
-      <!-- Computer Science -->
-      <details class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-200 hover:-translate-y-0.5 open:shadow-lg" open data-cat="Computer Science">
-        <summary class="list-none flex items-center justify-between gap-4 bg-slate-100 p-4 cursor-pointer">
-          <span class="font-bold text-blue-800 flex items-center gap-2">
-            Computer Science <span class="text-xs text-slate-900 bg-slate-200 border border-slate-300 rounded-full px-2 py-1" data-count>0</span>
-          </span>
-          <span class="transition-transform duration-200 open:rotate-180">
-            <i class="fas fa-chevron-down"></i>
-          </span>
-        </summary>
-        <ul class="p-4">
-          <li>
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.tandfonline.com/action/doSearch?ConceptID=4255" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> Taylor & Francis – Computer Science <span class="ml-auto text-sm opacity-60">tandfonline.com</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.sciencedirect.com/browse/journals-and-books?contentType=JL&accessType=openAccess&subject=computer-science-general" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> ScienceDirect – Computer Science (OA) <span class="ml-auto text-sm opacity-60">sciencedirect.com</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.ajol.info/browseBy/category?categoryId=27" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> AJOL – Computer Science <span class="ml-auto text-sm opacity-60">ajol.info</span>
-            </a>
-          </li>
-        </ul>
-      </details>
-
-      <!-- Mathematics -->
-      <details class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-200 hover:-translate-y-0.5 open:shadow-lg" open data-cat="Mathematics">
-        <summary class="list-none flex items-center justify-between gap-4 bg-slate-100 p-4 cursor-pointer">
-          <span class="font-bold text-blue-800 flex items-center gap-2">
-            Mathematics <span class="text-xs text-slate-900 bg-slate-200 border border-slate-300 rounded-full px-2 py-1" data-count>0</span>
-          </span>
-          <span class="transition-transform duration-200 open:rotate-180">
-            <i class="fas fa-chevron-down"></i>
-          </span>
-        </summary>
-        <ul class="p-4">
-          <li>
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.tandfonline.com/topic/allsubjects/ma?ConceptID=4271" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> Taylor & Francis – Mathematics <span class="ml-auto text-sm opacity-60">tandfonline.com</span>
-            </a>
-          </li>
-        </ul>
-      </details>
-
-      <!-- Extensive Links -->
-      <details class="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition-all duration-200 hover:-translate-y-0.5 open:shadow-lg" open data-cat="Extensive E-Journal Links">
-        <summary class="list-none flex items-center justify-between gap-4 bg-slate-100 p-4 cursor-pointer">
-          <span class="font-bold text-blue-800 flex items-center gap-2">
-            Extensive E-Journal Links <span class="text-xs text-slate-900 bg-slate-200 border border-slate-300 rounded-full px-2 py-1" data-count>0</span>
-          </span>
-          <span class="transition-transform duration-200 open:rotate-180">
-            <i class="fas fa-chevron-down"></i>
-          </span>
-        </summary>
-        <ul class="p-4">
-          <li>
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://academicjournals.org/" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> Academic Journals <span class="ml-auto text-sm opacity-60">academicjournals.org</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://journals.sagepub.com/home/sgo" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> SAGE Open <span class="ml-auto text-sm opacity-60">sagepub.com</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> National Library of Medicine (PubMed) <span class="ml-auto text-sm opacity-60">ncbi.nlm.nih.gov</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://academic.oup.com/journals" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> Oxford Academic Journals <span class="ml-auto text-sm opacity-60">oup.com</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.intechopen.com/" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> IntechOpen Journals <span class="ml-auto text-sm opacity-60">intechopen.com</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.springeropen.com/" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> SpringerOpen <span class="ml-auto text-sm opacity-60">springeropen.com</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.tandfonline.com/" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> Taylor & Francis Online <span class="ml-auto text-sm opacity-60">tandfonline.com</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://babel.hathitrust.org/cgi/mb?a=listis&c=1930843488" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> HathiTrust Journals <span class="ml-auto text-sm opacity-60">hathitrust.org</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.nationmaster.com/" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> NationMaster <span class="ml-auto text-sm opacity-60">nationmaster.com</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.elsevier.com/open-access/open-access-journals" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> Elsevier – Open Access Journals <span class="ml-auto text-sm opacity-60">elsevier.com</span>
-            </a>
-          </li>
-          <li class="mt-2">
-            <a class="flex items-center gap-2 p-3 border border-transparent rounded-xl transition-all duration-200 text-gray-800 hover:bg-gray-50 hover:border-gray-200 hover:translate-x-0.5 focus-visible:outline-2 focus-visible:outline-blue-300 focus-visible:outline-offset-2" href="https://www.biomedcentral.com/search/" target="_blank" rel="noopener">
-              <span class="text-base opacity-70"><i class="fas fa-external-link-alt"></i></span> BioMed Central <span class="ml-auto text-sm opacity-60">biomedcentral.com</span>
-            </a>
-          </li>
-        </ul>
-      </details>
-    </div>
-
-    <div class="hidden text-center p-8 bg-white border border-dashed border-gray-300 rounded-2xl text-gray-600" id="emptyState">
-      No matches. Try a different keyword or switch category.
-    </div>
-  </div>
-</main>
-      </div>
+            </div>
       <div
         id="_rht_toaster"
         style="
