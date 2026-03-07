@@ -45,6 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function showMainPage() {
     loginPage.classList.add("hidden");
     mainPage.classList.remove("hidden");
+    if (typeof window.initMainPage === "function") {
+      window.initMainPage();
+    }
   }
 
   function showLoginPage() {
