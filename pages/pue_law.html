@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/jpeg" href="/src/img/Peaceland Logo.jpg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peaceland Univeristy Enugu - Law Library</title>
+    <meta
+      name="description"
+      content="A Directory of Peaceland University Law Library Resources and Electronic Databases"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" crossorigin src="/assets/index-Bgd2edEj.js"></script>
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #f3f4f6;
+      }
+
+      /* .hero {
+        background-size: cover;
+        background-position: center;
+        padding: 40px 24px;
+      } */
+
+      .logout-btn {
+        display: block;
+        margin-left: auto;
+        background: white;
+        color: black;
+        border: none;
+        padding: 6px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background 0.2s;
+      }
+
+      .logout-btn:hover {
+        background: #f3f4f6;
+      }
+
+      .hero-logo {
+        display: block;
+        margin: 40px auto 0;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      @media (min-width: 640px) {
+        .hero-logo {
+          width: 120px;
+          height: 120px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .hero-logo {
+          width: 160px;
+          height: 160px;
+        }
+      }
+
+      .hero-title {
+        color: white;
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: 600;
+        margin-top: 16px;
+        padding: 16px 8px;
+      }
+
+      @media (min-width: 640px) {
+        .hero-title {
+          font-size: 1.5rem;
+        }
+      }
+
+      @media (min-width: 768px) {
+        .hero-title {
+          font-size: 2.25rem;
+        }
+      }
+
+      .hero-subtitle {
+        background: #0c0e41;
+        color: white;
+        text-align: center;
+        font-size: 1.125rem;
+        font-weight: 500;
+        margin-top: 8px;
+        padding: 16px;
+        border-radius: 8px;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media (min-width: 768px) {
+        .hero-subtitle {
+          font-size: 1.5rem;
+        }
+      }
+
+      .content {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 16px;
+        margin-top: 16px;
+      }
+
+      @media (min-width: 768px) {
+        .content {
+          padding: 24px;
+        }
+      }
+
+      .cards-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      .card-outer {
+        background: rgba(12, 14, 65, 0.7);
+        padding: 2px;
+        border-radius: 8px;
+        transition: transform 0.2s ease;
+      }
+
+      .card-outer:hover {
+        transform: scale(1.01);
+      }
+
+      .card-inner {
+        background: white;
+        border-radius: 6px;
+        padding: 16px;
+      }
+
+      .card-inner img {
+        height: 100px;
+        /* width: 100px; */
+        object-fit: cover;
+        object-position: center;
+      }
+
+      @media (min-width: 768px) {
+        .card-inner img {
+          height: 80px;
+        }
+      }
+
+      .card-inner p {
+        margin-top: 16px;
+        color: black;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      @media (min-width: 768px) {
+        .card-inner p {
+          font-size: 1.125rem;
+        }
+      }
+
+      .visit-btn {
+        display: inline-block;
+        margin-top: 16px;
+        padding: 8px 16px;
+        border: 2px solid #0c0e41;
+        color: #0c0e41;
+        border-radius: 6px;
+        font-weight: 500;
+        text-decoration: none;
+        transition:
+          background 0.3s,
+          color 0.3s;
+      }
+
+      .visit-btn:hover {
+        background: #0c0e41;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="law-library-page">
+      <!-- Hero Banner -->
+      <div class="bg-[url(/src/img/PeacelandBackgroundImage.jpg)] bg-black/75 bg-blend-overlay bg-cover py-10 px-3 md:px-6">
+          <!-- <button class="logout-btn" onclick="window.history.back()">
+            ← Back
+          </button> -->
+          <img
+            class="hero-logo"
+            src="/src/img/Peaceland Logo.jpg"
+            alt="Peaceland University"
+          />
+          <h1 class="hero-title">PEACELAND UNIVERSITY ENUGU</h1>
+          <h2 class="hero-subtitle">
+            PEACELAND UNIVERSITY LAW LIBRARY DATABASES AND ELECTRONIC RESOURCES
+          </h2>
+      </div>
+
+      <!-- Cards -->
+      <div class="content">
+        <div class="cards-wrapper">
+          <div class="card-outer">
+            <div class="card-inner">
+              <img
+                src="https://pue-library.vercel.app/assets/lexisNexis-DkxVz73U.png"
+                alt="Lexis+"
+              />
+              <p>
+                <span style="font-weight: bold">Lexis+</span> a legal research
+                platform. Lexis+ provides access to a vast database of legal
+                information, including case law, statutes, and articles. It's
+                commonly used by legal professionals, researchers, and students.
+              </p>
+              <a
+                href="https://plus.lexis.com/uk"
+                class="visit-btn"
+                target="_blank"
+                >visit now</a
+              >
+            </div>
+          </div>
+
+          <div class="card-outer">
+            <div class="card-inner">
+              <img src="https://pue-library.vercel.app/assets/primsol-CiwS3Xdk.png" alt="Law Pavilion" />
+              <p>
+                <span style="font-weight: bold">Law Pavilion</span> is an
+                all-in-one legal management software for your law practice,
+                providing all resources you need to increase efficiency and
+                scale your legal research.
+              </p>
+              <a
+                href="https://primsol.lawpavilion.com/"
+                class="visit-btn"
+                target="_blank"
+                >visit now</a
+              >
+            </div>
+          </div>
+
+          <div class="card-outer">
+            <div class="card-inner">
+              <img src="https://pue-library.vercel.app/assets/NWLR-CiAnvEid.png" alt="NWLR Online" />
+              <p>
+                <span style="font-weight: bold">NWLR Online</span> a platform
+                that provides access to the Nigerian Weekly Law Reports. NWLR is
+                a leading source of Nigerian case law, featuring reports of
+                court decisions from various jurisdictions.
+              </p>
+              <a
+                href="https://nwlronline.com/auth/login"
+                class="visit-btn"
+                target="_blank"
+                >visit now</a
+              >
+            </div>
+          </div>
+
+          <div class="card-outer">
+            <div class="card-inner">
+              <img
+                src="https://pue-library.vercel.app/assets/freeEbooks-CNn2TkH9.png"
+                alt="Free Law eBook Resources"
+              />
+              <p>
+                <span style="font-weight: bold">Free Law eBook Resources</span>
+                50+ Law Books for Free: This platform offers a wide variety of
+                law books in PDF format, covering topics such as administrative
+                law, labor law, and international law.
+              </p>
+              <a
+                href="https://directory.doabooks.org/discover?query=Law&locale-attribute=en"
+                class="visit-btn"
+                target="_blank"
+                >visit now</a
+              >
+            </div>
+          </div>
+
+          <div class="card-outer">
+            <div class="card-inner">
+              <img src="https://pue-library.vercel.app/assets/worldLII-CxbSNA2N.gif" alt="WorldLII" />
+              <p>
+                <span style="font-weight: bold"
+                  >World Legal Information Institute (WorldLII)</span
+                >
+                aims to provide free access to worldwide law, and has been
+                developed collaboratively by various Legal Information
+                Institutes around the world.
+              </p>
+              <a
+                href="https://www.worldlii.org/"
+                class="visit-btn"
+                target="_blank"
+                >visit now</a
+              >
+            </div>
+          </div>
+
+          <div class="card-outer">
+            <div class="card-inner">
+              <img
+                src="https://pue-library.vercel.app/assets/africanlii-hnSRhwEJ.svg"
+                alt="African Legal Information Institute"
+              />
+              <p>
+                <span style="font-weight: bold"
+                  >African Legal Information Institute</span
+                >
+                is an open-access research platform for African law jointly
+                operated by the AfricanLII programme of the University of Cape
+                Town and Laws.Africa.
+              </p>
+              <a
+                href="https://africanlii.org/"
+                class="visit-btn"
+                target="_blank"
+                >visit now</a
+              >
+            </div>
+          </div>
+
+          <div class="card-outer">
+            <div class="card-inner">
+              <img
+                src="https://pue-library.vercel.app/assets/cornelllawschool-Bg5TzOYX.png"
+                alt="Cornell Law School"
+              />
+              <p>
+                <span style="font-weight: bold">Cornell Law School</span> is the
+                law school of Cornell University. One of the five Ivy League law
+                schools, Cornell Law School offers four degree programs along
+                with several dual-degree programs.
+              </p>
+              <a
+                href="https://www.law.cornell.edu/"
+                class="visit-btn"
+                target="_blank"
+                >visit now</a
+              >
+            </div>
+          </div>
+
+          <div class="card-outer">
+            <div class="card-inner">
+              <img src="https://pue-library.vercel.app/assets/doab-4cbPbW-g.png" alt="DOAB" />
+              <p>
+                <span style="font-weight: bold"
+                  >DOAB: Directory of Open Access Books</span
+                >
+                is a community-driven discovery service that indexes and
+                provides access to scholarly, peer-reviewed open access books
+                and helps users to find trusted open access book publishers.
+              </p>
+              <a href="http://doabooks.org" class="visit-btn" target="_blank"
+                >visit now</a
+              >
+            </div>
+          </div>
+
+          <div class="card-outer">
+            <div class="card-inner">
+              <img
+                src="https://pue-library.vercel.app/assets/science_direct-BKWQF2LT.jpg"
+                alt="ScienceDirect"
+              />
+              <p>
+                <span style="font-weight: bold">ScienceDirect</span> is the
+                world's leading source for scientific, technical, and medical
+                research. Explore journals, books and articles.
+              </p>
+              <a
+                href="https://www.sciencedirect.com"
+                class="visit-btn"
+                target="_blank"
+                >visit now</a
+              >
+            </div>
+          </div>
+
+          <div class="card-outer">
+            <div class="card-inner">
+              <img
+                src="https://pue-library.vercel.app/assets/research4life-DREMYg0q.png"
+                alt="Research4Life"
+              />
+              <p>
+                <span style="font-weight: bold">Research4Life</span> provides
+                institutions in lower- and middle-income countries with online
+                access to academic and professional peer-reviewed content.
+              </p>
+              <a
+                href="https://login.research4life.org/tacgw/login.cshtml"
+                class="visit-btn"
+                target="_blank"
+                >visit now</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
